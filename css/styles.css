@@ -38,6 +38,8 @@ body {
 	margin: 0;
 	padding: 0;
 	float: right;
+	position: relative;
+	text-align: center;
 }
 
 .centered {
@@ -59,9 +61,15 @@ body {
 }
 
 .main-title {
-	font-weight: 500;
+	font-weight: 300;
 	text-align: center;
 	font-size: 4em;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.iphone {
+	width: 100%;
+	background-image: url(../img/black_iphone_outline.png);
+	background-size: cover;
 }
