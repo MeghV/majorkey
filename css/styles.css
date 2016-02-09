@@ -7,18 +7,43 @@ body {
 	font-family: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
    background: black;
+   color: white;
 }
 
 .red-bg {
 	background: #DC323C;
-	color: white;
 }
 
 .round-button {
 	border: none;
 	border-radius: 99px;
-	padding: 10px 15px;
+	padding: 15px 15px;
 	min-width: 250px;
+
+	margin-top: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 300px;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    -webkit-transition: background .3s ease;
+-moz-transition: background .3s ease;
+-ms-transition: background .3s ease;
+-o-transition: background .3s ease;
+transition: background .3s ease;
+
+}
+
+a::visited {
+
+}
+
+a:hover {
+	background: #B72B34;
 }
 
 .left-box {
@@ -30,6 +55,7 @@ body {
 	float: left;
 	position: relative;
 	text-align: center;
+
 }
 
 .right-box {
@@ -40,6 +66,12 @@ body {
 	float: right;
 	position: relative;
 	text-align: center;
+
+	border-left: 1px solid red;
+}
+
+.black-bg {
+	background: black;
 }
 
 .centered {
@@ -64,12 +96,121 @@ body {
 	font-weight: 300;
 	text-align: center;
 	font-size: 4em;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 5px auto;
+	width: 350px;
 }
+
+.subtitle {
+    text-align: center;
+    margin: 0px auto;
+    font-weight: 300;
+   	width: 350px;
+   	font-size: 2.1em;
+   	line-height: 38px;
+
+}
+
+
 
 .iphone {
 	width: 100%;
 	background-image: url(../img/black_iphone_outline.png);
 	background-size: cover;
 }
+
+
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.row {
+	height: 100%;
+}
+
+.col-md-7 {
+	height: 100%;
+	position: relative;
+}
+
+.centered-box {
+	position: absolute;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.centered-box-horizontal {   
+    top: 50%;
+    -moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%) ;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.full-height {
+	height: 100%;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+
+.centered-box-all {
+	top: 50%;
+	left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.preview-device {
+	background: url(../img/red_iphone_outline.png) no-repeat;
+    height: 700px;
+    background-size: contain;
+    width: 345px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#screen {
+	height: 528px;
+    margin-left: 23px;
+    width: 300p;
+    margin-top: 85px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+    .centered-box {
+    	position: relative;
+    	-moz-transform: none;
+		-webkit-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+		transform: none;
+		top: 0;
+		left: 0;
+		margin-top: 30px;
+    }
+
+    .full-height {
+    	height: auto;
+    }
+}
+
+
+
